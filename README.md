@@ -4,7 +4,7 @@ When working with managed tables in Unity Catalog there are many different kinds
 
 For example, if I have a table with '10 columns' I want to be able to grant "group1" access to make changes to "column1" in the table but I do not want them to be able to update any of the other 9 columns in the table.  __This method is a combination of column level fine grained access controls + managed table updates at the same time.__  I can also assign multiple groups to be able to make updates to other columns in the managed table and block them from being able to update column1 as well.
 
-This repo demonstration shows how to accomplish the example above using the code in this repo built as a python whl which the end user loads as Python library in on a Databricks cluster so the code cannot be modified by an end user.
+This repo demonstration shows how to accomplish the example above using the code in this repo built as a python whl which the end user loads as Python library on a Databricks cluster.
 
 # How to get started right away
 
