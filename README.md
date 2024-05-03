@@ -1,4 +1,4 @@
-# Unity Catalog Fine Grained Access Control for Managed Table Columns
+# Unity Catalog Fine Grained Access Control for Managed Table Columns + Table Updates
 
 When working with managed tables in Unity Catalog there are many different kinds of fine grained access controls (FGAC).  You can do column and row level masking for PII data.  You can grant individual groups access to an entire table.  What if I want to apply access controls for a subset of individual columns in UC managed table.  
 
