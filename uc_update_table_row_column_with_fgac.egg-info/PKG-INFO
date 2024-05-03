@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: uc-update-table-row-column-with-fgac
+Version: 0.1
+Summary: Python distribution utilities
+Author: Robert Altmiller
+Author-email: robert.altmiller@databricks.com
+Requires-Python: >=3.6
