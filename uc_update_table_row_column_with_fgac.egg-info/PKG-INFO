@@ -1,3 +1,11 @@
+Metadata-Version: 2.1
+Name: uc-update-table-row-column-with-fgac
+Version: 0.1
+Summary: Python distribution utilities
+Author: Robert Altmiller
+Author-email: robert.altmiller@databricks.com
+Requires-Python: >=3.6
+
 # Unity Catalog Fine Grained Access Control for Managed Table Columns
 
 When working with managed tables in Unity Catalog there are many different kinds of fine grained access controls (FGAC).  You can do column and row level masking for PII data.  You can grant individual groups access to an entire table.  What if I want to apply access controls for a subset of individual columns in UC managed table.  
@@ -18,14 +26,5 @@ clone the repo: https://github.com/robert-altmiller/unity_catalog_table_column_f
 
 To rebuild the python whl simply make updates to the Python code in the 'update_data' and 'db_setup' folders.  The 'main.py' file in the 'update_data' folder has the Python function which ensures the current user is part of the group which has access to MODIFY a single row and column of data.  The 'main.py' file in the 'db_setup' folder has all the Python function for environment setup and cleanup.
 
-Remove the 'dist' folder after you clone down the repo.  Next run the following command: 'pip install setuptools wheel'.  Update the 'setup.py' with your own details, and then run the following command to build a new Python whl file: 'python setup.py sdist bdist_wheel'.  After running this command it creates the following folders: 'uc_update_table_row_column_with_fgac.egg-info', 'dist', and 'build'.  The new Python whl can be found in the 'dist' folder.
-
-# Output of the run_notebook_example Databricks notebook
-
-![step1.png](/readme_images/step1.png)
-
-![step2.jpg](/readme_images/step2.png)
-
-![step3.jpg](/readme_images/step3.png)
-
-![step4.jpg](/readme_images/step4.png)
+Remove the 'dist' folder after you clone down the repo.  Next run the following command: 'pip install setuptools wheel'
+Update the 'setup.py' with your own details, and then run the following command to build a new Python whl file: 'python setup.py sdist bdist_wheel'  
